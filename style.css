@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*--------------ROOT VARIABLES-----------*/
+:root{
+--color-accent: #9104FF;
+--color-software: #FF9B9B;
+--color-devops: #74D478;
+--color-design: #FF9BD1;
+--color-sre: #A1AAFF;
+--color-background: #FFFFFF;
+--color-black: #000000;
+
+--card-border-radius: 1.25rem;
+--box-shadow: 0.25rem 0.25rem 0.938rem rgba(0, 0, 0, 0.06);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--color-background);
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--color-background);
+    gap: 1.8rem;
+    grid-template-columns: 6.813rem auto 25rem;
+    overflow-x: hidden;
+}
+
+a{
+    color: var(--color-black);
+}
+
+img{
+    display: block;
+    width:100%;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2.369rem;
+    line-height: 2.875rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.777rem;
+    line-height: 2.188rem;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 1.333rem;
+    line-height: 1.625rem;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#small-text{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+i{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    background: var(--color-background);
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 6.813rem;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.profile-photo{
+    width: 4.688rem;
+    height: 4.688rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    object-fit: cover;
+}
+
+.sidebar a{
+    padding: 1.2rem 0;
+    margin: 0 auto;
+}
+
+.sidebar i{
+    font-size: 2.2em;
+    transition: all 300ms ease;
+}
+
+.a-bottom{
+    position: absolute;
+    bottom: 0.7rem;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.a-bottom a{
+    padding: 0.7rem 0;
+    margin: 0 auto;
+}
+
+.sidebar i:hover{
+    margin-left: 0.5rem;
+}
+
+/*------MAIN SECTION--------*/
+.focused-path{
+    position: relative;
+    background: linear-gradient(100.39deg, #DBCAE8 -17.13%, #9104FF 111.88%);
+    margin-top:1rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    display: grid;
+    gap: 27rem;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.focused-path .left{
+    display: flex;
+    flex-direction: column;
+}
+
+.focused-path .left .progress{
+    position:absolute;
+    top:0;
+    left:0;
+    background: var(--color-background);
+    border-radius: 0.7rem;
+    width: 7.5rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    z-index:99;
+
+    border: 0.3rem solid var(--color-accent);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.focused-path span{
+    position:absolute;
+    top:0;
+    left:0;
+    background: var(--color-background);
+    border-radius: 0 0 0.7rem 0;
+    width: 8rem;
+    height: 6.5rem;
+    z-index:1;
+}
+
+.progress h1{
+    font-weight: 800;
+    color:var(--color-accent);
+}
+
+.focused-path .left .details{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.focused-path .left .details h2{
+    color: var(--color-background);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.focused-path .left .details p{
+    color: var(--color-background);
+    margin-bottom: 2rem;
+}
+
+.focused-path .left .details .cta-button{
+    background: var(--color-background);
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 8vh;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.focused-path .left .details .cta-button i{
+    font-size: 2em;
+    padding-right: 1rem;
+    color:var(--color-accent);
+}
+
+.focused-path .left .details .cta-button h3{
+    color:var(--color-accent);
+}
+
+.focused-path .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.focused-path .right img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.filter{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 1rem 0;
+}
+
+.filter-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+    background: var(--color-background);
+    box-shadow: var(--box-shadow);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.filter-card p{
+    font-weight: 500;
+}
+
+#general-background{
+    background:var(--color-accent);
+}
+
+#software-background{
+    background:var(--color-software);
+}
+
+#software-color{
+    color: #DC4949;
+}
+
+#sre-background{
+    background: var(--color-sre);
+}
+
+#sre-color{
+    color:#5B6AFF;
+}
+
+#devops-background{
+    background: var(--color-devops);
+}
+
+#devops-color{
+    color: #1AC821;
+}
+
+#design-background{
+    background: var(--color-design);
+}
+
+#design-color{
+    color: #F247A4;
+}
+
+.icon-circle{
+    position: relative;
+    border-radius: 50%;
+    background: red;
+    width: 2.5vw;
+    aspect-ratio: 1;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 0.7rem;
+}
+
+.icon-circle i{
+    font-size: 1.2em;
+    color:var(--color-background);
+}
+
+.showcase-paths{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    color:var(--color-background);
+    margin-bottom: 1.5rem;
+}
+
+.path-card{
+    position: relative;
+    background: var(--color-background);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.path-card .left{
+    display: flex;
+    flex-direction: column;
+} 
+
+.experience-points{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.experience-points img{
+    width: 1.375rem;
+    height: 1.375rem;
+    margin-left:0.4rem;
+}
+
+.path-card .left .details .cta-button{
+    background: var(--color-background);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    padding: 0.8rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.path-card .left .details .cta-button i{
+    font-size: 1.5em;
+    padding-right: 0.7rem;
+    color:var(--color-accent);
+}
+
+.path-card .left .details h3{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.path-card .left .details p{
+    margin-bottom: 1rem;
+}
+
+.path-card .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.path-card .right img{
+    width:100%;
+}
+
+.right-section{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.leaderboard{
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.leaderboard .title-see-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.leaderboard .title-see-all h3{
+    font-weight: 600;
+}
+
+.leaderboard .title-see-all h4{
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    margin-bottom: 0;
+}
+
+.leaderboard-item{
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+.leaderboard-item:last-child{
+    border-bottom: none;
+}
+
+.leaderboard-item .person{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.leaderboard-item .person .profile-photo{
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 1;
+    width: 3.5rem;
+    height: auto;
+}
+
+.leaderboard-item .achievement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.leaderboard-item .achievement .progression{
+    color:var(--color-accent);
+}
+
+.right-section .blog{
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.right-section .blog h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.right-section .blog .blog-cover{
+    width: 100%;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.right-section .blog .blog-cover img{
+    object-fit: cover;
+}
+
+.right-section .blog .details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.right-section .blog .details .person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-section .blog .details .person .profile-photo{
+    margin: 0;
+    width: 3rem;
+    aspect-ratio: 1;
+    height: auto;
+}
+
+.right-section .blog .details .tag{
+    background: #E8CBFF;
+    color: #420075;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.right-section .blog .details .tag h4{
+    font-size: 0.8rem;
+}
+
+.right-section .blog p{
+    font-size: 0.85rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.right-section .blog .cta-button{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-accent);
+    border-radius: 1rem;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right-section .blog .cta-button h3{
+    color:var(--color-background);
+    margin: 0 auto;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution Tree Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/phosphor-icons@1.4.1"></script>
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="profile-photo"> <img src = "images/profilepic.jpg"> </div>
+            <a href="#">
+                <i class="ph-house" style="color:#9104FF;"></i>
+            </a>
+            <a href="#">
+                <i class="ph-tree"></i>
+            </a>
+            <a href="#">
+                <i class="ph-lightbulb"></i>
+            </a>
+            <a href="#">
+                <i class="ph-medal"></i>
+            </a>
+
+            <div class="a-bottom">
+                <a href="#">
+                    <i class="ph-question"></i>
+                </a>
+                <a href="#">
+                    <i class="ph-gear"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MAIN SECTION -->
+        <main>
+            <!-- FOCUSED PATH -->
+            <div class="focused-path">
+                <div class="left">
+                    <div class="progress">
+                        <h1>35%</h1>
+                    </div>
+                    <span></span>
+                    <div class="details">
+                        <h2>Java Developer Path</h2>
+                        <p>Next step: Maven/Gradle Experience</p>
+                        <div class="cta-button">
+                            <i class="ph-play"></i>
+                            <h3>Start learning</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right"> <img src="images/focused-path-illustration.png"> </div>
+            </div>
+
+            <h3>Learn more</h3>
+            <div class="filter">
+                <div class="filter-card">
+                    <div class="icon-circle" id="general-background">
+                        <i class="ph-chalkboard-simple"></i>
+                    </div>
+                    <p> All paths </p>
+                </div>
+                <div class="filter-card">
+                    <div class="icon-circle" id="software-background">
+                        <i class="ph-wrench"></i> 
+                    </div>
+                    <p> Software engineer </p>
+                </div>
+                <div class="filter-card">
+                    <div class="icon-circle" id="sre-background">
+                        <i class="ph-lightning"></i>
+                    </div>
+                    <p> SRE </p>
+                </div>
+                <div class="filter-card">
+                    <div class="icon-circle" id="devops-background">
+                        <i class="ph-plugs-connected"></i>
+                    </div>
+                    <p> DevOps </p>
+                </div>
+                <div class="filter-card">
+                    <div class="icon-circle" id="design-background">
+                        <i class="ph-palette"></i>
+                    </div>
+                    <p> Design </p>
+                </div>
+            </div>
+
+            <!-- SHOWCASE PATHS -->
+            <div class="showcase-paths">
+                <div class="path-card" id="software-background">
+                    <div class="left">
+                        <div class="experience-points">
+                            <h3>7</h3>
+                            <img src="images/experience points.svg">
+                        </div>
+                        <div class="details">
+                            <h3>Java Developer Path</h3>
+                            <p>A guide from basic to more advanced Java notions to become a Java Developer.</p>
+                            <div class="cta-button" id="software-color">
+                                <i class="ph-play" id="software-color"></i>
+                                <h4>Start learning</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right"> <img src="images/software-3d-icon.png"> </div> 
+                </div>
+
+                <div class="path-card" id="sre-background">
+                    <div class="left">
+                        <div class="experience-points">
+                            <h3>7</h3>
+                            <img src="images/experience points.svg">
+                        </div>
+                        <div class="details">
+                            <h3>SRE Path</h3>
+                            <p>A guide from basic to more advanced practices of Site Reliability Enigneering.</p>
+                            <div class="cta-button" id="sre-color">
+                                <i class="ph-play" id="sre-color"></i>
+                                <h4>Start learning</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right"> <img src="images/sre-3d-icon.png"> </div> 
+                </div>
+
+                <div class="path-card" id="devops-background">
+                    <div class="left">
+                        <div class="experience-points">
+                            <h3>7</h3>
+                            <img src="images/experience points.svg">
+                        </div>
+                        <div class="details">
+                            <h3>DevOps Path</h3>
+                            <p>A guide from basic to more advanced notions to master DevOps knowledge.</p>
+                            <div class="cta-button" id="devops-color">
+                                <i class="ph-play" id="devops-color"></i>
+                                <h4>Start learning</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right"> <img src="images/devops-3d-icon.png"> </div> 
+                </div>
+
+                <div class="path-card" id="design-background">
+                    <div class="left">
+                        <div class="experience-points">
+                            <h3>7</h3>
+                            <img src="images/experience points.svg">
+                        </div>
+                        <div class="details">
+                            <h3>Digital Design Path</h3>
+                            <p>A guide from basic to more advanced design notions to become a Digital Designer.</p>
+                            <div class="cta-button" id="design-color">
+                                <i class="ph-play" id="design-color"></i>
+                                <h4>Start learning</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right"> <img src="images/design-3d-icon.png"> </div> 
+                </div>
+            </div>
+        </main>
+            
+            <!-- RIGHT SECTION -->
+            <div class="right-section">
+                <div class="leaderboard">
+                    <div class="title-see-all">
+                        <h3>Leaderboard</h3>
+                        <h4>See all</h4>
+                    </div>
+                    <h4>DevOps</h4>
+                    <div class="leaderboard-item">
+                        <div class="person">
+                            <div class="profile-photo"> 
+                                <img src="images/leaderboard-1.jpg" class="profile-photo"> 
+                            </div>
+                            <h4>John</h4>
+                        </div>
+                        <div class="achievement">
+                            <div class="progression">
+                                <i class="ph-caret-double-up"></i>
+                                <p>+15 Ep</p>
+                            </div>
+                            <div class="badge"> <img src="images/badge1.png"> </div>
+                        </div>
+                    </div>
+
+                    <div class="leaderboard-item">
+                        <div class="person">
+                            <div class="profile-photo"> 
+                                <img src="images/leaderboard-2.jpg"> 
+                            </div>
+                            <h4>Mark</h4>
+                        </div>
+                        <div class="achievement">
+                            <div class="progression">
+                                <i class="ph-caret-double-up"></i>
+                                <p>+35 Ep</p>
+                            </div>
+                            <div class="badge"> <img src="images/badge2.png"> </div>
+                        </div>
+                    </div>
+
+                    <div class="leaderboard-item">
+                        <div class="person">
+                            <div class="profile-photo"> 
+                                <img src="images/leaderboard-3.jpg"> 
+                            </div>
+                            <h4>Tim</h4>
+                        </div>
+                        <div class="achievement">
+                            <div class="progression">
+                                <i class="ph-caret-double-down"></i>
+                                <p>-5 Ep</p>
+                            </div>
+                            <div class="badge"> <img src="images/badge3.png"> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <h3>New Blog Post</h3>
+                    <div class="blog-cover"> <img src="images/blog-cover.jpg"> </div>
+                    <h4>Setting up your workspace</h4>
+                    <div class="details">
+                        <div class="person">
+                            <div class="profile-photo"> <img src="images/profilepic.jpg"> </div>
+                            <h4>Mark</h4>
+                        </div>
+                        <div class="tag"> <h4>Work life</h4> </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="cta-button"> <h3>Read more</h3> </div>
+                </div>
+            </div>
+    
+    </div>
+</body>
+</html>
